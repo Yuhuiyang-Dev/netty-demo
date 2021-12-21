@@ -1,6 +1,4 @@
-package com.xmutca.netty.bytebuffer;
-
-import static com.xmutca.netty.bytebuffer.ByteBufferUtil.debugAll;
+package com.xmutca.netty.nio.bytebuffer;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -25,9 +23,9 @@ public class TestScatteringReads {
             b1.flip();
             b2.flip();
             b3.flip();
-            debugAll(b1);
-            debugAll(b2);
-            debugAll(b3);
+            ByteBufferUtil.debugAll(b1);
+            ByteBufferUtil.debugAll(b2);
+            ByteBufferUtil.debugAll(b3);
 
         } catch (IOException e) {
             log.error(e.getMessage(), e);

@@ -1,6 +1,4 @@
-package com.xmutca.netty.bytebuffer;
-
-import static com.xmutca.netty.bytebuffer.ByteBufferUtil.debugAll;
+package com.xmutca.netty.nio.bytebuffer;
 
 import java.nio.ByteBuffer;
 
@@ -17,7 +15,7 @@ public class TestByteBufferRead {
 
         //rewind 从头开始读
         buffer.get(new byte[4]);
-        debugAll(buffer);
+        ByteBufferUtil.debugAll(buffer);
         buffer.rewind();//从头开始读 rewind(position=0; mark = -1;)
         System.out.println((char) buffer.get());
 
@@ -40,6 +38,6 @@ public class TestByteBufferRead {
 
         //get(i) 不会改变 position 位置
         System.out.println((char) buffer.get(2));
-        debugAll(buffer);
+        ByteBufferUtil.debugAll(buffer);
     }
 }

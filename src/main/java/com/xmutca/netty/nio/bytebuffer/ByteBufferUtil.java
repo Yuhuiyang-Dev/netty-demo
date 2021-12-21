@@ -1,4 +1,4 @@
-package com.xmutca.netty.bytebuffer;
+package com.xmutca.netty.nio.bytebuffer;
 
 import io.netty.util.internal.MathUtil;
 import io.netty.util.internal.StringUtil;

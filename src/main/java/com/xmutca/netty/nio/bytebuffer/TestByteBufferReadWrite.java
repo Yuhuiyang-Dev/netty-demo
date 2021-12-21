@@ -1,6 +1,4 @@
-package com.xmutca.netty.bytebuffer;
-
-import static com.xmutca.netty.bytebuffer.ByteBufferUtil.debugAll;
+package com.xmutca.netty.nio.bytebuffer;
 
 import java.nio.ByteBuffer;
 
@@ -14,22 +12,22 @@ public class TestByteBufferReadWrite {
         ByteBuffer buffer = ByteBuffer.allocate(10);
 
         buffer.put((byte) 0x61);
-        debugAll(buffer);
+        ByteBufferUtil.debugAll(buffer);
 
         buffer.put(new byte[]{0x62, 0x63, 0x64});
-        debugAll(buffer);
+        ByteBufferUtil.debugAll(buffer);
 
 //        System.out.println(buffer.get());
         buffer.flip();
         System.out.println(buffer.get());
-        debugAll(buffer);
+        ByteBufferUtil.debugAll(buffer);
 
         buffer.compact();//compact切换模式，此时position及其后面的数据被压缩到ByteBuffer前面去了,( (新)position = limit - position; limit = capacity)
-        debugAll(buffer);
+        ByteBufferUtil.debugAll(buffer);
 
 
         buffer.put(new byte[]{0x65, 0x66});
-        debugAll(buffer);
+        ByteBufferUtil.debugAll(buffer);
 
     }
 

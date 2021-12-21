@@ -1,4 +1,4 @@
-package com.xmutca.netty.bytebuffer;
+package com.xmutca.netty.nio.bytebuffer;
 
 import java.nio.ByteBuffer;
 import lombok.extern.slf4j.Slf4j;

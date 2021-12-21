@@ -1,4 +1,4 @@
-package com.xmutca.netty.bytebuffer;
+package com.xmutca.netty.nio.bytebuffer;
 
 import java.io.FileInputStream;
 import java.io.IOException;

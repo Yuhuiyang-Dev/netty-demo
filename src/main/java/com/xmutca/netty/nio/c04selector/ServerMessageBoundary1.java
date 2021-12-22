@@ -19,7 +19,7 @@ import lombok.extern.slf4j.Slf4j;
  * @since 2021.12.21
  */
 @Slf4j
-public class ServerMessageBoundary {
+public class ServerMessageBoundary1 {
 
     public static void main(String[] args) throws IOException {
 
@@ -60,14 +60,13 @@ public class ServerMessageBoundary {
                 } else if (key.isReadable()) {
                     try {
                         final SocketChannel channel = (SocketChannel) key.channel();
-                        ByteBuffer buffer = ByteBuffer.allocate(4);
+                        ByteBuffer buffer = ByteBuffer.allocate(16);
                         final int read = channel.read(buffer);//如果是正常断开，read 方法返回的是 -1
                         if (read == -1) {
                             log.debug("客户端正常断开");
                             key.cancel();
                             continue;
                         }
-                        buffer.flip();
                         split(buffer);
 
                     } catch (IOException e) {

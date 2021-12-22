@@ -1,4 +1,4 @@
-package com.xmutca.netty.nio.bytebuffer;
+package com.xmutca.netty.nio.c01bytebuffer;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;

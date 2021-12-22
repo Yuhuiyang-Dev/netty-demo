@@ -1,4 +1,4 @@
-package com.xmutca.netty.nio.file;
+package com.xmutca.netty.nio.c02file;
 
 import java.io.IOException;
 import java.nio.file.FileVisitResult;

@@ -1,6 +1,6 @@
-package com.xmutca.netty.nio.bytebuffer;
+package com.xmutca.netty.nio.c01bytebuffer;
 
-import static com.xmutca.netty.nio.bytebuffer.ByteBufferUtil.debugAll;
+import static com.xmutca.netty.nio.c01bytebuffer.ByteBufferUtil.debugAll;
 
 import java.nio.ByteBuffer;
 
